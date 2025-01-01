@@ -47,4 +47,4 @@ This project implements a RESTful API for managing hostels, rooms, and bookings 
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository_url>
+   git clone <https://github.com/Chinku23/pg_hostel>
