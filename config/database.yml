@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: postgres
+  password: Preeti@123
+  host: localhost
+
+development:
+  <<: *default
+  database: pg_hostel_dev
+
+test:
+  <<: *default
+  database: pg_hostel_test
+
+production:
+  <<: *default
+  database: pg_hostel_management_production
+  username: <%= ENV['PG_USERNAME'] %>
+  password: <%= ENV['PG_PASSWORD'] %>
